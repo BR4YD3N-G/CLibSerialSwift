@@ -40,12 +40,7 @@ let package = Package(
             name: "CLibSerialSwift",
             dependencies: ["libserialport"],
             path: "Sources/CLibSerialSwift",
-            publicHeadersPath: ".",
-            cSettings: [
-                .unsafeFlags([
-                    "-fmodule-map-file=Sources/CLibSerialSwift/module.modulemap"
-                ])
-            ]
+            publicHeadersPath: "include"
         ),
 
         .testTarget(

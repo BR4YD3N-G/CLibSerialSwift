@@ -1,5 +1,5 @@
 module CLibSerialSwift [system] {
-    header "../../Sources/libserialport/libserialport.h"
+    header "CLibSerialHeaderLink.h"
     link "serialport"
     export *
 }
